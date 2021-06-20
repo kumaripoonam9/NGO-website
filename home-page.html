@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Smile Foundation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+            type="text/css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato"
+            rel="stylesheet"
+            type="text/css">
+        <link rel="stylesheet" href="css/home-page.css">
+    </head>
+
+    <body
+        onload="welcome()"
+        id="myPage"
+        data-spy="scroll"
+        data-target=".navbar"
+        data-offset="60"
+        class="">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button
+                        type="button"
+                        class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage">
+                        SMILE FOUNDATION
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="home-page.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                JOIN US
+                                <span class="glyphicon glyphicon-triangle-bottom"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="donation.html">DONATIONS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">VOLUNTEER</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#ourwork">OUR WORK</a>
+                        </li>
+                        <li>
+                            <a href="#events">EVENTS</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="login.html">LOGIN<span class="glyphicon glyphicon-log-in"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sign-up.html">SIGN UP<span class="glyphicon glyphicon-log-in"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- heading -->
+        <div class="jumbotron text-center main-bg">
+            <h1>Smile Foundation</h1>
+            <p onmouseover="onmouseover_fun()" onmouseout="onmouseout_fun()" id="tag_line">Building humanity together</p>
+            <a href="donation.html">
+                <button type="button" class="btn btn-danger">Donate</button>
+            </a>
+            <a href="#">
+                <button type="button" class="btn btn-danger">Volunteer</button>
+            </a>
+
+        </div>
+
+        <!-- about us -->
+        <div id="about" class="container-fluid">
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h2>About Us</h2><br>
+                            <h4>Sustainability, social equality and the environment are now business
+                                problems. And corporate leaders can't depend on governments to solve them..
+                                <br>
+                                <small>
+                                    <i>- Peter Senge, Founder, Society for Organisational Learning</i>
+                                </small>
+                            </h4><br>
+                            <p>Inspired by Senge's philosophy, a group of young corporate professionals came
+                                together in 2002 to set up Smile Foundation to work with grassroots initiatives
+                                for effecting positive changes in the lives of underprivileged children, their
+                                families and communities.</p>
+                            <br>
+                            <a href="contact-us.html">
+                                <button
+                                    onmousedown="onmousedown_fun()"
+                                    class="btn btn-default btn-lg btn-green">Get in Touch</button>
+                            </a>
+                            <i>
+                                <span id="getintouch"></span>
+                            </i>
+                        </div>
+                        <div class="col-sm-4 ">
+                            <img src="img/home-page/img-1.jpg " class="c-img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our values and mission -->
+        <div class="container-fluid bg-grey">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/home-page/img-1.jpg" class="c-img" alt="">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Our Values</h2><br>
+                        <h4>
+                            <strong>MISSION:</strong>
+                            Smile Foundation, a non-profit organization in india is to empower
+                            underprivileged children, youth and women through relevant education, innovative
+                            healthcare and market-focused livelihood programmes.</h4><br>
+                        <p>
+                            <strong>VISION:</strong>
+                            <ul>
+                                <li>
+                                    <b>Work as a catalyst in bringing sustainable change</b>
+                                    in the lives of underprivileged children, youth and women, with a life-cycle
+                                    approach of development.</li>
+                                <li>Enable the civil society across the world to
+                                    <b>engage proactively in the change process</b>
+                                    through the philosophy of civic driven change.</li>
+                                <li>
+                                    <b>Adopt highest standards of governance</b>
+                                    to emerge as a leading knowledge and technology driven, innovative and scalable
+                                    international development organisation.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- our work -->
+        <div id="ourwork" class="container-fluid text-center">
+            <div class="container">
+                <h2>OUR WORK</h2>
+                <h4>What we offer</h4>
+                <br>
+                <div class="row slideanim">
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-leaf logo-small"></span>
+                        <h4>DISASTER RESPONSE</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-heart logo-small" style="color: crimson;"></span>
+                        <h4>HEALTH</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <span class="glyphicon glyphicon-lock logo-small"></span>
+                        <h4>EDUCATION</h4>
+                        <p>Lorem ipsum dolor sit amet..</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- events -->
+        <div id="events" class="container-fluid text-center bg-grey">
+            <div class="container">
+                <h2>Events</h2><br>
+                <h4>What we have done
+                </h4>
+                <div class="row text-center slideanim">
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="img/home-page/post-1.jpg" alt="Paris" width="400" height="300">
+                            <p>
+                                <strong>Shiksha Na Ruke</strong>
+                            </p>
+                            <p>Join hands with us to help these little dreamers continue their education.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="img/home-page/post-2.jpg" alt="New York" width="400" height="300">
+                            <p>
+                                <strong>Health Cannot Wait</strong>
+                            </p>
+                            <p>For those suffering at the hands of the pandemic they need your support NOW.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img
+                                src="img/home-page/post-3.jpg"
+                                alt="San Francisco"
+                                width="400"
+                                height="300">
+                            <p>
+                                <strong>India Shares</strong>
+                            </p>
+                            <p>It is time to extend support and make sure no one sleeps hungry in the times
+                                of COVID 19.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- testimonies -->
+            <h2>What people have to say</h2>
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>"Helping those who are in need feels great."<br>
+                            <span>Kumari Poonam, Student, KJSCE</span>
+                        </h4>
+                    </div>
+                    <div class="item">
+                        <h4>"One word... SMILE!!"<br>
+                            <span>Aditya Sindhvad, Student, KJSCE</span>
+                        </h4>
+                    </div>
+                    <div class="item">
+                        <h4>"Could I... BE any more happy with this NGO?"<br>
+                            <span>Chandler Bing, Actor, Friends</span>
+                        </h4>
+                    </div>
+                </div>
+
+                <a
+                    class="left carousel-control"
+                    href="#myCarousel"
+                    role="button"
+                    data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a
+                    class="right carousel-control"
+                    href="#myCarousel"
+                    role="button"
+                    data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- contact us -->
+        <div id="contact" class="container-fluid">
+            <div class="container">
+                <h2 class="text-center" id="onchange">CONTACT</h2>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <p>Contact us and we'll get back to you within 24 hours.</p>
+                        <p>
+                            <span class="glyphicon glyphicon-map-marker"></span>
+                            New Delhi, India</p>
+                        <p>
+                            <span class="glyphicon glyphicon-phone"></span>
+                            +91-22-26104106/07</p>
+                        <p>
+                            <span class="glyphicon glyphicon-envelope"></span>
+                            info@smilefoundationindia.org</p>
+                    </div>
+                    <div class="col-sm-7 slideanim">
+                        <!-- contact form -->
+                        <form
+                            action=""
+                            onreset="reset_form()"
+                            onsubmit="return form_validate()"
+                            name="contactForm">
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <input
+                                        class="form-control"
+                                        id="name"
+                                        name="name"
+                                        placeholder="Name"
+                                        type="text"
+                                        onblur="caps_fun()"
+                                        onchange="name_change()"
+                                        required>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <input
+                                        class="form-control"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Email"
+                                        type="email"
+                                        required>
+                                </div>
+                            </div>
+                            <textarea
+                                class="form-control"
+                                id="comments"
+                                name="comments"
+                                placeholder="Comment"
+                                rows="5"></textarea><br>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <button
+                                        class="btn btn-default pull-left btn-green"
+                                        type="submit"
+                                        onclick="form_validate()">Send</button>
+                                    <input
+                                        class="btn btn-default pull-right btn-green"
+                                        type="reset"
+                                        value="Reset"
+                                        formtarget="contactForm">
+                                </div>
+                            </div>
+                        </form>
+                        <small>
+                            <p class="" id="form_msg"></p>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- big background wallpaper with msg on it -->
+        <figure ondblclick="ondbclick_fun()" class="main-bg-last">
+            <p>Double click on the image to see a message!</p>
+            <div id="dbmsg">
+                <p>We are proud to have people like you that care about those less priviliged
+                    than us!
+                    <br>
+                    We would be glad if you would like to work with us by donating or volunteering.
+                    <br>Don't forget to spread a smile today.
+                    <br>THANK YOU
+                </p>
+            </div>
+            <img src="img/home-page/background-2.jpg" class="image greyscale-min">
+        </figure>
+
+        <!-- footer -->
+        <footer class="container-fluid text-center">
+            <a href="#myPage" titlehhh5hhm9immj="To Top">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>All Rights Reserved | &copy; Copyright 2021 | Smile Foundation
+            </a>
+        </p>
+        </footer>
+
+
+        <script src="js/home-page.js"></script>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

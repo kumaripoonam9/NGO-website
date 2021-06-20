@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Login</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous">
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+            type="text/css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato"
+            rel="stylesheet"
+            type="text/css">
+
+        <!-- custom css from sign-up page -->
+        <link rel="stylesheet" href="css/sign-up.css">
+
+        <!-- additonal style for login page -->
+        <style>
+            .flex-box {
+                height: 90vh;
+                padding-top: 10vh;
+            }
+            .heading {
+                color: white;
+            }
+        </style>
+
+        <script src="js/login.js"></script>
+    </head>
+
+    <body>
+
+        <!----------- Navbar ----------->
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container">
+
+                    <a class="navbar-brand pl-md-3" href="home-page.html">
+                        <b>Smile Foundation</b>
+                    </a>
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <form class="ml-auto">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home-page.html" class="">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        id="navbarDropdown"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        join us
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="donation.html">Donations</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Volunteer</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home-page.html#ourwork" class="">our work</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home-page.html#events" class="">events</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us.html" class="">contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html" class="">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sign-up.html" class="">Sign Up<span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <div class="flex-box">
+            <div class="text-center heading">
+                <h1 class="">login</h1>
+            </div>
+
+            <!-- sign up form -->
+            <form
+                name="signupform"
+                class="form-signup"
+                method="POST"
+                onsubmit="return validate_login()">
+
+                <div class="form-label-group">
+                    <input
+                        type="text"
+                        id="username"
+                        class="form-control"
+                        placeholder="Username"
+                        name="username">
+                    <label for="username">Username or Email
+                        <small>*</small>
+                    </label>
+                    <small id="errorusername"></small>
+                </div>
+
+                <div class="form-label-group">
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        placeholder="Password"
+                        name="password">
+                    <label for="password">Password
+                        <small>*</small>
+                    </label>
+                    <small id="errorpassword"></small>
+                </div>
+
+                <button class="btn btn-green btn-block" type="submit">Login</button>
+
+            </form>
+
+            <div class="text-center">
+                <div class="mt-5">
+                    <span class="">
+                        Don't have an account ?
+                    </span>
+                </div>
+                <div>
+                    <a href="sign-up.html" class="">Create a new account</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="text-center text-white p-3 mt-5 fixed-bottom">
+            Copyright &copy; Smile Foundation | All rights reserved 2021
+        </footer>
+
+        
+
+
+
+        
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
